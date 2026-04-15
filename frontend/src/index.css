@@ -3,24 +3,28 @@
    ============================================ */
 
 :root {
-  --bg-dark: #1a0a00;
-  --bg-card: rgba(45, 18, 0, 0.7);
-  --bg-card-hover: rgba(60, 25, 0, 0.8);
-  --glass: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(234, 88, 12, 0.15);
-  --accent-purple: #ea580c;
-  --accent-pink: #f97316;
-  --accent-blue: #fbbf24;
-  --accent-cyan: #fb923c;
-  --accent-green: #10b981;
-  --accent-orange: #ef4444;
-  --accent-yellow: #fde68a;
-  --text-primary: #fff7ed;
-  --text-secondary: #fed7aa;
-  --text-muted: #9a5a2a;
-  --gradient-1: linear-gradient(135deg, #ea580c, #fbbf24);
-  --gradient-2: linear-gradient(135deg, #f97316, #ef4444);
-  --gradient-3: linear-gradient(135deg, #fbbf24, #f97316);
+  --bg-dark: #0b0f14;
+  --bg-card: rgba(20, 28, 40, 0.75);
+  --bg-card-hover: rgba(30, 42, 60, 0.85);
+
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(56, 189, 248, 0.15);
+
+  --accent-purple: #a78bfa;
+  --accent-pink: #fb7185;
+  --accent-blue: #38bdf8;
+  --accent-cyan: #22d3ee;
+  --accent-green: #34d399;
+  --accent-orange: #fb923c;
+  --accent-yellow: #facc15;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+
+  --gradient-1: linear-gradient(135deg, #38bdf8, #a78bfa);
+  --gradient-2: linear-gradient(135deg, #fb7185, #fb923c);
+  --gradient-3: linear-gradient(135deg, #22d3ee, #34d399);
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 24px;
