@@ -132,7 +132,7 @@ jobs:
           # Provenance (provenance: true) adds verifiable metadata about how and where the Docker image was built, helping ensure the build process is trustworthy and hasn’t been tampered with.
           # SBOM (sbom: true) generates a detailed list of all packages and dependencies inside the image, which is useful for vulnerability scanning and compliance checks.
 
-# STAGE 5: Trivy - Container image scanning
+# STAGE 4: Trivy - Container image scanning
   image-scan:
     name: "scan ${{ matrix.component }} image"
     runs-on: ubuntu-latest
