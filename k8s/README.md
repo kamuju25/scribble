@@ -12,6 +12,25 @@ Navigate to the Scribble directory and then to k8s folder, then run -
 ```bash
 kubectl apply -f scribble.yml
 ```
-
 You can now run kubectl get pods to verify the pods, or check the same from the AWS Console under the EKS service.
+
+To check if argocd is installed 
+```bash
+kubectl get all -n argocd
+```
+Run
+```bash
+kubectl get secrets -n argocd
+```
+Look for argocd-initial-admin-secret by running kubectl edit secret argocd-initial-admin-secret to fetch the secret. The password will be in base64 encoded format — to decode it, run `echo <password> | base64 --decode` 
+
+Also run.
+```bash
+kubectl get svc -n argocd
+```
+
+Here we will port forward using the kubectl, it can a
+```bash
+kubectl port-forward svc/argocd-server <port>:<argocd-server-port> -n argocd --address 0.0.0.0
+```
 
