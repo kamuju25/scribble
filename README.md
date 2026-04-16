@@ -76,7 +76,7 @@ cd ~/scribble
 chmod +x deploy/setup.sh
 ./deploy/setup.sh
 ```
-![alt text](<Screenshot 2026-04-15 131227.png>)
+![alt text](./images/Screenshot%202026-04-15%20131227.png)
 
 This script will:
 1. Update system packages
@@ -94,7 +94,7 @@ Open your browser and go to:
 ```
 http://<EC2_PUBLIC_IP>
 ```
-![alt text](<Screenshot 2026-04-15 131216.png>)
+![alt text](./images/Screenshot%202026-04-15%20131216.png)
 
 ### Useful Commands
 
