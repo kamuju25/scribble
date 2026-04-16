@@ -26,7 +26,7 @@ Run
 ```bash
 kubectl get secrets -n argocd
 ```
-Look for argocd-initial-admin-secret by running kubectl edit secret argocd-initial-admin-secret to fetch the secret. The password will be in base64 encoded format — to decode it, run `echo <password> | base64 --decode` 
+Look for `argocd-initial-admin-secret` and by running `kubectl edit secret argocd-initial-admin-secret` to fetch the secret. The password will be in base64 encoded format — to decode it, run `echo <password> | base64 --decode` 
 
 Also run.
 ```bash
