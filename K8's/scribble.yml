@@ -308,7 +308,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: frontend
-          image: docker.io/docker pull kamuju25/scribble-frontend:1.0.0
+          image: docker.io/kamuju25/scribble-frontend:1.0.0
           ports:
             - containerPort: 8080
               protocol: TCP
