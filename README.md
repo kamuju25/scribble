@@ -169,3 +169,16 @@ The Vite dev server starts on `http://localhost:3000` and proxies `/api` request
 ---
 
 Built by the scribble team.
+
+==========================================================
+
+## To install on EKS
+
+As the application is currently deployed on an EC2 instance, if you want to deploy it on an EKS cluster, follow the steps below:
+
+  - Install Terraform on your local machine and configure AWS credentials using the AWS CLI.
+  - Create a VPC with public and private subnets using Terraform modules, hosting the EKS cluster within the private subnet.
+  - Provision the EKS cluster using Terraform's EKS module in auto mode.
+  - Create Docker containers, define Kubernetes manifests, and deploy the application onto the EKS cluster.
+
+For VPC and EKS setup, refer to the Terraform folder in this repository. For deploying the application on EKS, refer to the Kubernetes folder in this repository.
