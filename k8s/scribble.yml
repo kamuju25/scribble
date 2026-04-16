@@ -160,6 +160,7 @@ spec:
 
 ---
 # ---- Backend Deployment ----
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -201,7 +202,7 @@ spec:
               echo "DB is ready!"
       containers:
         - name: backend
- image: ghcr.io/kamuju25/scribble/scribble-backend:fe7184d
+          image: ghcr.io/kamuju25/scribble/scribble-backend:6716796
           ports:
             - containerPort: 5000
               protocol: TCP
@@ -307,7 +308,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: frontend
- image: ghcr.io/kamuju25/scribble/scribble-frontend:fe7184d
+          image: ghcr.io/kamuju25/scribble/scribble-frontend:6716796
           ports:
             - containerPort: 8080
               protocol: TCP
@@ -338,7 +339,6 @@ spec:
               port: 8080
             initialDelaySeconds: 3
             periodSeconds: 5
-
 ---
 # ---- Frontend Service (NodePort — for access via port-forward or node IP) ----
 # NOTE: Changed from LoadBalancer because this AWS account does not support
