@@ -202,7 +202,7 @@ spec:
       containers:
         - name: backend
 <<<<<<< HEAD
- image: ghcr.io/kamuju25/scribble/scribble-backend:fce2cd2
+ image: ghcr.io/kamuju25/scribble/scribble-backend:521a852
 =======
  image: ghcr.io/kamuju25/scribble/scribble-backend:6716796
 >>>>>>> d81861ece9ebee825172d6c9001ed768fe37a979
@@ -313,7 +313,7 @@ spec:
       containers:
         - name: frontend
 <<<<<<< HEAD
- image: ghcr.io/kamuju25/scribble/scribble-frontend:fce2cd2
+ image: ghcr.io/kamuju25/scribble/scribble-frontend:521a852
 =======
  image: ghcr.io/kamuju25/scribble/scribble-frontend:6716796
 >>>>>>> d81861ece9ebee825172d6c9001ed768fe37a979
