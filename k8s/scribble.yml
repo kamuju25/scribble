@@ -90,7 +90,8 @@ spec:
         app.kubernetes.io/part-of: scribble
         app.kubernetes.io/component: database
     spec:
-      # Security: don't automount service account token (DB doesn't need K8s API)
+      # Security: don't automount service account token (DB doesn't need K8s API). By default, Kubernetes automatically mounts a ServiceAccount token inside every pod at:/var/run/secrets/kubernetes.io/serviceaccount/token. This token allows the pod to talk to the Kubernetes API.
+      # The Problem - Most application pods (frontend, backend) don't need to talk to the Kubernetes API at all. But the token is mounted anyway — so if a pod is compromised, an attacker can use that token to interact with your cluster.
       automountServiceAccountToken: false
       tolerations:
         - key: "karpenter.sh/disrupted"
