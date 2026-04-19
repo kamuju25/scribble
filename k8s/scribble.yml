@@ -203,7 +203,7 @@ spec:
               echo "DB is ready!"
       containers:
         - name: backend
- image: ghcr.io/kamuju25/scribble/scribble-backend:444fe71
+          image: ghcr.io/kamuju25/scribble/scribble-backend:444fe71
           ports:
             - containerPort: 5000
               protocol: TCP
