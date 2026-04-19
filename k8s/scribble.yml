@@ -373,16 +373,16 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      app.kubernetes.io/name: scribble-db
+      app.kubernetes.io/name: scribble-db  # This policy applies to the db pod
   policyTypes:
-    - Ingress
+    - Ingress # we are controlling incoming traffic
   ingress:
     - from:
         - podSelector:
             matchLabels:
-              app.kubernetes.io/name: scribble-backend
+              app.kubernetes.io/name: scribble-backend #only allows traffic from backend pod.
       ports:
-        - port: 5432
+        - port: 5432 # only on postgres port
           protocol: TCP
 
 ---
