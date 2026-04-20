@@ -205,7 +205,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: backend
-          image: ghcr.io/kamuju25/scribble/scribble-backend:447e46d
+          image: ghcr.io/kamuju25/scribble/scribble-backend:ed7df67
           ports:
             - containerPort: 5000
               protocol: TCP
@@ -313,7 +313,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: frontend
-          image: ghcr.io/kamuju25/scribble/scribble-frontend:447e46d
+          image: ghcr.io/kamuju25/scribble/scribble-frontend:ed7df67
           ports:
             - containerPort: 8080
               protocol: TCP
