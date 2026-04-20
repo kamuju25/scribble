@@ -32,7 +32,6 @@ If you are connected to AWS CLI and EKS from your local machine, run this comman
 kubectl port-forward svc/scribble-frontend 8172:80 -n scribble --address 0.0.0.0
 ```
 
-
 ## Install and Configure Argo CD
 
 You can follow the official documentation: [Argo-CD](https://argo-cd.readthedocs.io/en/stable/getting_started/)

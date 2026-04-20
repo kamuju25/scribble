@@ -355,7 +355,7 @@ metadata:
     app.kubernetes.io/part-of: scribble
     app.kubernetes.io/component: frontend
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app.kubernetes.io/name: scribble-frontend
   ports:
