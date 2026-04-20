@@ -240,7 +240,7 @@ jobs:
           # (the image: line right after `- name: frontend`)
           FRONTEND_LINE=$(awk '/- name: frontend/{found=1} found && /image:/{print NR; exit}' k8s/scribble.yml)
           echo "Frontend image at line: ${FRONTEND_LINE}"
-          sed -i "${FRONTEND_LINE}s|.*|           image: ${FRONTEND_IMAGE}:${IMAGE_TAG}|" k8s/scribble.yml
+          sed -i "${FRONTEND_LINE}s|.*|          image: ${FRONTEND_IMAGE}:${IMAGE_TAG}|" k8s/scribble.yml
 
           echo "Updated images to tag: ${IMAGE_TAG}"
           grep -n "image:" k8s/scribble.yml

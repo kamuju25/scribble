@@ -308,7 +308,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: frontend
-           image: ghcr.io/kamuju25/scribble/scribble-frontend:7237967
+          image: ghcr.io/kamuju25/scribble/scribble-frontend:7237967
           ports:
             - containerPort: 8080
               protocol: TCP
