@@ -234,13 +234,13 @@ jobs:
           # (the image: line right after `- name: backend`)
           BACKEND_LINE=$(awk '/- name: backend/{found=1} found && /image:/{print NR; exit}' k8s/scribble.yml)
           echo "Backend image at line: ${BACKEND_LINE}"
-          sed -i "${BACKEND_LINE}s|.*| image: ${BACKEND_IMAGE}:${IMAGE_TAG}|" k8s/scribble.yml
+          sed -i "${BACKEND_LINE}s|.*|          image: ${BACKEND_IMAGE}:${IMAGE_TAG}|" k8s/scribble.yml
 
           # Find the line number of the frontend container image
           # (the image: line right after `- name: frontend`)
           FRONTEND_LINE=$(awk '/- name: frontend/{found=1} found && /image:/{print NR; exit}' k8s/scribble.yml)
           echo "Frontend image at line: ${FRONTEND_LINE}"
-          sed -i "${FRONTEND_LINE}s|.*| image: ${FRONTEND_IMAGE}:${IMAGE_TAG}|" k8s/scribble.yml
+          sed -i "${FRONTEND_LINE}s|.*|          image: ${FRONTEND_IMAGE}:${IMAGE_TAG}|" k8s/scribble.yml
 
           echo "Updated images to tag: ${IMAGE_TAG}"
           grep -n "image:" k8s/scribble.yml
