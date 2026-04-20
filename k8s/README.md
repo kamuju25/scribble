@@ -20,16 +20,16 @@ To verify -
 kubectl get svc -n scribble
 ```
 
+If you are connected to AWS CLI from an ec2 instance then change the frontend service to LoadBalancer and access it in the browser using -
+
+```bash
+http://<external-dns-ip>
+```
+
 If you are connected to AWS CLI and EKS from your local machine, run this command to access the application in your browser.
 
 ```bash
 kubectl port-forward svc/scribble-frontend 8172:80 -n scribble --address 0.0.0.0
-```
-
-To verify -
-
-```bash
-kubectl get svc -n scribble
 ```
 
 
