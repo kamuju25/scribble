@@ -1,4 +1,4 @@
-# 🛤️ scribble — Blog Platform
+# scribble — Blog Platform
 
 A blog platform built with a 3-tier architecture — React frontend, Node.js backend, and PostgreSQL database.
 
