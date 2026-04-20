@@ -201,6 +201,8 @@ spec:
                 sleep 3
               done
               echo "DB is ready!"
+      imagePullSecrets:
+        - name: ghcr-secret
       containers:
         - name: backend
           image: ghcr.io/kamuju25/scribble/scribble-backend:ed7df67
@@ -307,6 +309,8 @@ spec:
         - key: "karpenter.sh/disrupted"
           operator: "Exists"
           effect: "NoSchedule"
+      imagePullSecrets:
+        - name: ghcr-secret
       containers:
         - name: frontend
           image: ghcr.io/kamuju25/scribble/scribble-frontend:ed7df67
