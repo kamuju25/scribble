@@ -203,7 +203,7 @@ spec:
               echo "DB is ready!"
       containers:
         - name: backend
-          image: ghcr.io/kamuju25/scribble/scribble-backend:e23624d
+          image: ghcr.io/kamuju25/scribble/scribble-backend:651d99c
           ports:
             - containerPort: 5000
               protocol: TCP
@@ -309,7 +309,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: frontend
-          image: ghcr.io/kamuju25/scribble/scribble-frontend:e23624d
+          image: ghcr.io/kamuju25/scribble/scribble-frontend:651d99c
           ports:
             - containerPort: 8080
               protocol: TCP
