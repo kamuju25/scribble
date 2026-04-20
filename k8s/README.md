@@ -1,6 +1,6 @@
 To connect to EKS cluster from the ec2 instance -
 
-Install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) on the Linux server, install the AWS CLI, and then run `aws configure` to authenticate with AWS so you can launch and access resources.
+Install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) on the Linux server, install the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), and then run `aws configure` to authenticate with AWS so you can launch and access resources.
 
 ```bash
 aws eks update-kubeconfig --name <cluster-name> --region <region>
