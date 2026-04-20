@@ -26,7 +26,7 @@ If you are connected to AWS CLI from an ec2 instance then change the frontend se
 http://<external-dns-ip>
 ```
 
-If you are connected to AWS CLI and EKS from your local machine, run this command to access the application in your browser.
+If you are connected to EKS using aws cli from your local machine, run this command to access the application in your browser.
 
 ```bash
 kubectl port-forward svc/scribble-frontend 8172:80 -n scribble --address 0.0.0.0
