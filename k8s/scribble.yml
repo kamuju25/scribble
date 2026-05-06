@@ -14,6 +14,7 @@ metadata:
 
 ---
 # ---- Database Secret ----
+# In production, use External Secrets Operator or Sealed Secrets.
 # This is base64 encoded.
 # echo -n 'scribble_user' | base64 → amVybmV5X3VzZXI=
 # echo -n 'scribble_pass_2026' | base64 → amVybmV5X3Bhc3NfMjAyNg==
